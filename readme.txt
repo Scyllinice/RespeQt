@@ -28,6 +28,14 @@ Some features
 * Automatic Translator activation when OS-B is detected in the filename in drive D1:
 * Favorite tool disk accessible in one click in drive D1:
 
+Flatpak
+=======
+
+RespeQt can be built as a Flatpak.
+
+1. Make sure the 5.15-23.08 version of org.kde.Platform and org.kde.Sdk is installed, as well as flatpak-builder.
+2. To build and install as a user, run "flatpak-builder --user --install --force-clean build org.respeqt.RespeQt.yml"
+
 License (see license.txt file for more details)
 ===============================================
 RespeQt fork Copyright 2015,2016 by Joseph Zatarski, Copyright 2015 DrVenkman, and Copyright 2016 TheMontezuma, Copyright 2016, 2017 by Jochen Schäfer (josch1710), and Copyright 2017 by blind.

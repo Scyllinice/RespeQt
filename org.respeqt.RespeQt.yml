@@ -1,0 +1,28 @@
+id: org.respeqt.RespeQt
+runtime: org.kde.Platform
+runtime-version: '5.15-23.08'
+sdk: org.kde.Sdk
+command: RespeQt
+finish-args:
+  - --device=dri
+  - --device=all
+  - --filesystem=home
+  - --share=ipc
+  - --share=network
+  - --socket=fallback-x11
+  - --socket=wayland
+modules:
+  - name: RespeQt
+    buildsystem: qmake
+    build-commands:
+      - sh main-icon/icons.sh
+      - install -D RespeQt /app/bin/RespeQt
+      - install -Dm644 main-icon/resized/icon_512x512.png /app/share/icons/hicolor/512x512/apps/org.respeqt.RespeQt.png
+      - install -Dm644 RespeQt.desktop /app/share/applications/org.respeqt.RespeQt.desktop
+    sources:
+      - type: dir
+        path: .
+      # - type: git
+      #   url: https://github.com/RespeQt/RespeQt.git
+      #   branch: master
+      #   commit: 203e61153d566bc3d77d345e76c5e4a46603f46b

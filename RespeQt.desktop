@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=RespeQt
+GenericName=RespeQt
+Comment=Atari serial peripheral emulator
+Exec=RespeQt %U
+Icon=org.respeqt.RespeQt
+Terminal=false
+MimeType=text/x-respeqt;
+Categories=Game;Utility;
